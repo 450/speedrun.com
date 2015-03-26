@@ -2,7 +2,8 @@ body {
 	background: #101010 url(Backgrounds/Default.png) 50% 50% repeat;
 }
 
-section article {
+main article {
+	background: rgb(32, 32, 32);
 	background: rgba(32, 32, 32, 0.9);
 }
 
