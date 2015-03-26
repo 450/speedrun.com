@@ -1,5 +1,6 @@
 html, body {
 	margin: 0;
+	padding-top: 24px;
 }
 
 html, body, button, input, select, textarea {
@@ -10,9 +11,52 @@ button, input, select, textarea {
 	padding: 2px 4px;
 }
 
+td, th {
+	text-align: left;
+}
+
+td a, th a {
+	color: #E0E0E0;
+}
+
+th small {
+	font-weight: normal;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 1136px;
+}
+
+.username {
+	font-weight: bold;
+}
+
+.flag {
+	background: transparent url(Icons/Flags.png) no-repeat;
+	display: inline-block;
+	height: 14px;
+	vertical-align: -2px;
+	width: 18px;
+}
+
+.flag.jp { background-position: 0px -1980px; }
+
+.game-image,
+.game-image a {
+	height: 92px;
+	line-height: 92px;
+	text-align: center;
+	vertical-align: middle;
+	width: 112px;
+}
+
+.game-image img {
+	vertical-align: middle;
+}
+
+.game-name a {
+	color: #A0A0A0;
 }
 
 .table-display {
@@ -26,11 +70,8 @@ button, input, select, textarea {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	position: relative;
 	table-layout: fixed;
-}
-
-.table-display ul ul {
-	display: none;
 }
 
 .table-display .right {
@@ -58,6 +99,42 @@ button, input, select, textarea {
 
 .table-display img {
 	vertical-align: middle;
+}
+
+.nav-button-dropdown ul {
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	border-radius: 0 0 5px 5px;
+	display: none;
+	height: auto;
+	max-width: 220px;
+	position: absolute;
+	top: 100%;
+	top: calc(100% + 1px);
+	right: 0;
+	width: auto;
+}
+
+.nav-button-dropdown.active ul {
+	display: block;
+}
+
+.nav-button-dropdown li {
+	display: block;
+}
+
+.nav-button-dropdown li > a,
+.nav-button-dropdown li > span {
+	color: #E0E0E0;
+	display: block;
+	line-height: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+.nav-button-dropdown li a small {
+	display: block;
+	font-weight: normal;
 }
 
 #navbar {
@@ -96,4 +173,60 @@ button, input, select, textarea {
 	line-height: 17px;
 	margin: 0 10px;
 	width: 300px;
+}
+
+section article {
+	border: 1px solid #505050;
+	border-radius: 5px;
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+  -ms-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+  -o-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+	color: #C0C0C0;
+	font-size: 16px;
+	padding: 10px;
+}
+
+section article h1 {
+	margin: 0;
+}
+
+section article#latest-runs {
+	float: left;
+  width: 792px;
+}
+
+section article#latest-tweets {
+	float: right;
+	width: 278px;
+}
+
+#latest-runs table {
+	font-size: 14px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+#latest-runs table a {
+	text-decoration: none;
+}
+
+#latest-runs .rank {
+	text-align: center;
+}
+
+#latest-runs .time {
+	text-align: right;
+}
+
+footer {
+	color: #C0C0C0;
+	font-size: 12px;
+	text-align: center;
+}
+
+footer a {
+	color: #E0E0E0;
+	text-decoration: none;
 }
