@@ -38,7 +38,7 @@ Folder | Name | Purpose
 ------ | ---- | -------
 ↳ | Generic.js | Globally used JavaScript, to be minified
 HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
--- ↳ | html5shiv-printshiv.min.js | As above
+ | html5shiv-printshiv.min.js | 
 jQuery | jquery-1.11.2.min.js | [jQuery](https://github.com/jquery/jquery)
 
 ## What's different?
