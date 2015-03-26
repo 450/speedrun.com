@@ -14,12 +14,22 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
 ### HTML
 
 Folder | Name | Purpose
------- | ------- | -------------
-&rdsh; | index.html | This is the main homepage (http://speedrun.com)
+------ | ---- | -------
+↳ | index.html | This is the main homepage (http://speedrun.com)
 Games | index.html | This is the Games top-level page (http://speedrun.com/games)
 Streams | index.html | This is the Streams top-level page (http://speedrun.com/streams)
 Resources | index.html | This is the Resources top-level page (http://speedrun.com/resources)
 Forum | index.html | This is the forum top-level page (http://speedrun.com/forum)
+
+### CSS
+
+Base folder: Assets
+
+Folder | Name | Purpose
+------ | ---- | -------
+↳ | Global.css | Globally used CSS. This applies to all themes.
+Themes | ... | Various themese applied on top of Global.css.
+
 
 ## What's different?
 
