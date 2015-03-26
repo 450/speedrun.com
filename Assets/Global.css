@@ -199,6 +199,7 @@ section article#latest-runs {
 
 section article#latest-tweets {
 	float: right;
+	height: 610px;
 	width: 278px;
 }
 
