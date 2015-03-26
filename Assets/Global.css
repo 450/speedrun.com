@@ -175,7 +175,7 @@ th small {
 	width: 300px;
 }
 
-section article {
+main article {
 	border: 1px solid #505050;
 	border-radius: 5px;
 	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
@@ -188,16 +188,16 @@ section article {
 	padding: 10px;
 }
 
-section article h1 {
+main article h1 {
 	margin: 0;
 }
 
-section article#latest-runs {
+main article#latest-runs {
 	float: left;
   width: 792px;
 }
 
-section article#latest-tweets {
+main article#latest-tweets {
 	float: right;
 	height: 610px;
 	width: 278px;
