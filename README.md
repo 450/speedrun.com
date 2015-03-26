@@ -21,14 +21,23 @@ Streams | index.html | This is the Streams top-level page (http://speedrun.com/s
 Resources | index.html | This is the Resources top-level page (http://speedrun.com/resources)
 Forum | index.html | This is the forum top-level page (http://speedrun.com/forum)
 
-### CSS
+### Stylesheets
 
 Base folder: Assets
 
 Folder | Name | Purpose
 ------ | ---- | -------
 ↳ | Global.css | Globally used CSS. This applies to all themes.
-Themes | ... | Various themese applied on top of Global.css.
+Themes | ... | Various themes applied on top of Global.css.
+
+### JavaScript
+
+Base folder: Assets
+
+Folder | Name | Purpose
+------ | ---- | -------
+↳ | Generic.js | Globally used JavaScript. Should be minified before put into production.
+HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv) for HTML5 support on non-supporting browsers (IE8 and lower).
 
 
 ## What's different?
