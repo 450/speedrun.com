@@ -1,0 +1,29 @@
+body {
+	background: #101010 url(Backgrounds/Default.png) 50% 50% repeat;
+}
+
+.username {
+	text-shadow: 0px -1px #000, 1px -1px #000, 1px 0px #000, 1px 1px #000, 0px 1px #000, -1px 1px #000, -1px 0px #000, -1px -1px #000;
+}
+
+#navbar {
+	background: rgba(80, 80, 80, 0.9);
+  background: -moz-linear-gradient(top, rgba(80, 80, 80, 0.9) 0%, rgba(32, 32, 32, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(80, 80, 80, 0.9)), color-stop(100%,rgba(32, 32, 32, 0.9)));
+  background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
+  background: -o-linear-gradient(top, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
+  background: -ms-linear-gradient(top, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
+  background: linear-gradient(to bottom, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(80, 80, 80, 0.9)', endColorstr='rgba(32, 32, 32, 0.9)',GradientType=0 );
+}
+
+#navbar a:hover, #navbar a:focus {
+	background: rgba(112, 112, 112, 0.9);
+  background: -moz-linear-gradient(top, rgba(112, 112, 112, 0.9) 0%, rgba(64, 64, 64, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(112, 112, 112, 0.9)), color-stop(100%,rgba(64, 64, 64, 0.9)));
+  background: -webkit-linear-gradient(top, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
+  background: -o-linear-gradient(top, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
+  background: -ms-linear-gradient(top, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
+  background: linear-gradient(to bottom, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(112, 112, 112, 0.9)', endColorstr='rgba(64, 64, 64, 0.9)',GradientType=0 );
+}

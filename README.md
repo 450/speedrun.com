@@ -19,7 +19,8 @@ Folder | Name | Purpose
 Games | index.html | This is the Games top-level page (http://speedrun.com/games)
 Streams | index.html | This is the Streams top-level page (http://speedrun.com/streams)
 Resources | index.html | This is the Resources top-level page (http://speedrun.com/resources)
-Forum | index.html | This is the forum top-level page (http://speedrun.com/forum)
+Forums | index.html | This is the forum top-level page (http://speedrun.com/forum)
+Users | ExampleUser.html | This is an example user page (http://speedrun.com/user/...)
 
 ### Stylesheets
 
@@ -28,7 +29,7 @@ Base folder: Assets
 Folder | Name | Purpose
 ------ | ---- | -------
 ↳ | Global.css | Globally used CSS. This applies to all themes
-Themes | ... | Various themes applied on top of Global.css
+Themes | Default.css | Default theme
 
 ### JavaScript
 
@@ -38,8 +39,18 @@ Folder | Name | Purpose
 ------ | ---- | -------
 ↳ | Generic.js | Globally used JavaScript, to be minified
 HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
- | html5shiv-printshiv.min.js | 
+- | html5shiv-printshiv.min.js | -
 jQuery | jquery-1.11.2.min.js | [jQuery](https://github.com/jquery/jquery)
+
+### Images
+
+Base folder: Assets
+
+Folder | Purpose
+------ | ---- | -------
+↳ | Site logo and favicon
+Icons | Icon images used throughout site
+Themes/Backgrounds | Theme background images
 
 ## What's different?
 
