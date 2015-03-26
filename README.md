@@ -27,8 +27,8 @@ Base folder: Assets
 
 Folder | Name | Purpose
 ------ | ---- | -------
-↳ | Global.css | Globally used CSS. This applies to all themes.
-Themes | ... | Various themes applied on top of Global.css.
+↳ | Global.css | Globally used CSS. This applies to all themes
+Themes | ... | Various themes applied on top of Global.css
 
 ### JavaScript
 
@@ -36,9 +36,10 @@ Base folder: Assets
 
 Folder | Name | Purpose
 ------ | ---- | -------
-↳ | Generic.js | Globally used JavaScript. Should be minified before put into production.
-HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv) for HTML5 support on non-supporting browsers (IE8 and lower).
-
+↳ | Generic.js | Globally used JavaScript. Should be minified before put into production
+HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv) for Internet Explorer 8 and lower
+-- ↳ | html5shiv-printshiv.min | Support for printing
+jQuery | jquery-1.11.2.min.js | The most recent version of jQuery which supports all browsers.
 
 ## What's different?
 
