@@ -36,10 +36,10 @@ Base folder: Assets
 
 Folder | Name | Purpose
 ------ | ---- | -------
-↳ | Generic.js | Globally used JavaScript. Should be minified before put into production
-HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv) for Internet Explorer 8 and lower
--- ↳ | html5shiv-printshiv.min | Support for printing
-jQuery | jquery-1.11.2.min.js | The most recent version of jQuery which supports all browsers.
+↳ | Generic.js | Globally used JavaScript, to be minified
+HTML5Shiv | html5shiv.min.js | [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
+-- ↳ | html5shiv-printshiv.min.js | As above
+jQuery | jquery-1.11.2.min.js | [jQuery](https://github.com/jquery/jquery)
 
 ## What's different?
 
