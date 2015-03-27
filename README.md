@@ -215,10 +215,10 @@ Games | [index.html](http://450.github.io/speedrun.com/Games/index.html) | Games
 Streams | [index.html](http://450.github.io/speedrun.com/Streams/index.html) | Streams top-level page (http://speedrun.com/streams)
 Resources | [index.html](http://450.github.io/speedrun.com/Resources/index.html) | Resources top-level page (http://speedrun.com/resources)
 Forums | [index.html](http://450.github.io/speedrun.com/Forums/index.html) | Forums top-level page (http://speedrun.com/forum)
-Users | [ExampleUser.html](http://450.github.io/speedrun.com/Users/ExampleUser.html) | Example user profile page (http://speedrun.com/user/...)
+Users | [ExampleUser.html](http://450.github.io/speedrun.com/Users/ExampleUser.html) | Example user profile page ([http://speedrun.com/user/...](http://speedrun.com/user/Tryst))
 ↳ | [EditProfile.html](http://450.github.io/speedrun.com/Users/EditProfile.html) | Edit profile page (http://speedrun.com/editprofile)
 ↳ | [Settings.html](http://450.github.io/speedrun.com/Users/Settings.html) | Settings page (http://speedrun.com/settings)
-↳ | [RunsAwaitingVerification.html](http://450.github.io/speedrun.com/Users/RunsAwaitingVerification.html) | Run verification page (http://speedrun.com/runsawaitingverification)
+↳ | [RunsAwaitingV...](http://450.github.io/speedrun.com/Users/RunsAwaitingVerification.html) | Run verification (http://speedrun.com/runsawaitingverification)
 
 ### Stylesheets
 
