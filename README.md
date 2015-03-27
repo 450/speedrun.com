@@ -38,6 +38,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
   * [Images](#images)
 * [Validation Tests](#validation-tests)
   * [HTML](#html-1)
+  * [CSS](#css)
 
 ---
 
@@ -252,8 +253,6 @@ Themes/Backgrounds | Theme background images
 
 The following validation tests have been carried out on the completed files to ensure they comply with W3 validation standards. Where appropriate, screenshots of how each page renders on different browsers have also been provided.
 
-### HTML
-
 What we want to see:
 
 ![Valid](http://i.imgur.com/2m0GmDm.png)
@@ -262,6 +261,18 @@ What the current Speedrun.com website shows and what we definitely do not want t
 
 ![Invalid](http://i.imgur.com/c6lk0jF.png)
 
+### HTML
+
 Path | Validity | Screenshots
 ---- | -------- | -----------
-[index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome on 8.1](http://i.imgur.com/QY98ltN.png), [IE8 on XP](http://i.imgur.com/RswgDIa.png), [IE9 on 7](http://i.imgur.com/NFDIVz0.png).
+[index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome on 8.1](http://i.imgur.com/QY98ltN.png), [IE8 on XP](http://i.imgur.com/RswgDIa.png), [IE9 on 7](http://i.imgur.com/NFDIVz0.png)
+[Games/index.html](http://450.github.io/speedrun.com/Games/index.html) | Not ready | - 
+
+### CSS
+
+Base folder: Assets
+
+Path | Validity | Screenshots
+---- | -------- | -----------
+Global.css | Not ready | - 
+Themes/Default.css | Not ready | - 
