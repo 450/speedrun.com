@@ -18,6 +18,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
 * [What's different?](#whats-different)
   * [HTML From the Ground Up](#html-from-the-ground-up)
     * [Updated to HTML5](#updated-to-html5)
+    * [No More Inline Styling](#no-more-inline-styling)
     * [The Page Header](#the-page-header)
     * [Unsemantic Tables Replaced with Relevant Markup](#unsemantic-tables-replaced-with-relevant-markup)
       * [Navigation Menus](#navigation-menus)
@@ -40,7 +41,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
 
 The current Speedrun.com website uses HTML401 and invalidly introduces HTML5 elements which didn't exist in the HTML401 specification. All pages within this repository are HTML5 compliant and all feature the following declaration at the top:
 
-```
+```html
 <!doctype HTML>
 ```
 
@@ -51,17 +52,42 @@ The W3's HTML validation service can be found at http://validator.w3.org.
 
 In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5shiv) has been introduced to allow old versions of Internet Explorer to use the new HTML5 elements. This can be found in the Assets/HTML5Shiv folder. Targetting only versions of IE lower than 9, the following declaration can be found in the `<head>` element of each page:
 
-```
+```html
 <!--[if lt IE 9]>
   <script src="Assets/HTML5Shiv/html5shiv.min.js"></script>
 <![endif]-->
 ```
 
+#### No More Inline Styling
+
+Inline styling is bad, very bad! Inline styling makes the entire website very hard to maintain as it means you have to edit multiple pages rather than just the one CSS file. With that said, moving inline styling into a CSS file is definitely the way forward.
+
+Inline styling does still exist in a couple of places. The reason for this is that I didn't want this redesign to cause too much of an uphaul on the back-end. Usernames, for example, still have their colours defined within the element's `style` attribute (although I've dropped the unnecessary `!important` declaration the current website uses on these). In an ideal world the only inline styling would be toggled by the JavaScript and all styling including username colours would be driven by the CSS.
+
+*Current Implementation*
+
+```html
+<a class="username" href="Users/ExampleUser.html" style="color: #E44;">Example User</a>
+```
+
+*Ideal Implementation*
+
+```html
+<a class="username red" href="Users/ExampleUser.html">Example User</a>
+```
+
+```css
+.username.red {
+	color: #E44;
+}
+```
+
+
 #### The Page Header
 
 The page header on the current Speedrun.com website features two elements positioned on top of each other - one for the full-width background and the other for the inner content. This has now been replaced with just one HTML5 `<header>` element. Within this, the now-invalid `<center>` element (which was deprecated in the HTML401 specification) has been replaced with a HTML5 `<section>` element which has been given the following CSS declaration: `margin: 0 auto`. This keeps the element block-level, keeping the style similar accross multiple devices and browsers.
 
-```
+```html
 <header>
 	<section class="wrapper table-display">
 	  ...
@@ -71,8 +97,8 @@ The page header on the current Speedrun.com website features two elements positi
 
 For SEO purposes, a hidden `<h1>` element has been placed alongside the site's logo with the content "Speedrun.com". This is the title of the page, and can be updated on each page to let search engine crawlers know what the page's purpose is. E.g. "Speedrun.com's Games Listing". Due to it being hidden, users will not know this element exists unless they're using screen readers - perfect for accessibility, too!
 
-```
-<h1 style="display: none">Speedrun.com</h1> <!-- For SEO purposes. -->
+```html
+<h1 class="hidden">Speedrun.com</h1> <!-- For SEO purposes. -->
 ```
 
 #### Unsemantic Tables Replaced with Relevant Markup
@@ -85,7 +111,7 @@ CSS allows us to style things to look like tables with its `display: table` and 
 
 Navigation menus aren't tabular data, so have been updated to now use the HTML5 `<nav>` element, and feature unordered lists of links.
 
-```
+```html
 <nav>
 	<ul>
 		<li>
@@ -100,7 +126,7 @@ Navigation menus aren't tabular data, so have been updated to now use the HTML5 
 
 The general practice on `<script>` element placement is that scripts should appear [*before you need it [and] no sooner*](http://stackoverflow.com/a/196708/1317805). With the exception of the HTML5 Shiv which is placed in the `<head>` due to it being required prior to HTML5 elements and attributes being used, all of the JavaScript files are now initiated before the closing `</body>` tag.
 
-```
+```html
 <body>
   ...
 	<script type="text/javascript" src="Assets/jQuery/jquery-1.11.2.min.js"></script>

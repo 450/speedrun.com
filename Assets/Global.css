@@ -23,6 +23,14 @@ th small {
 	font-weight: normal;
 }
 
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 1136px;
