@@ -287,7 +287,7 @@ Path | Validity | Screenshots
 
 Base folder: Assets
 
-Path | Validity | Screenshots
----- | -------- | -----------
-Global.css | Not ready | - 
-Themes/Default.css | Not ready | - 
+Path | Validity
+---- | --------
+Global.css | Not ready
+Themes/Default.css | Not ready
