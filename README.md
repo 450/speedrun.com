@@ -131,6 +131,17 @@ Navigation menus aren't tabular data, so have been updated to now use the HTML5 
 </nav>
 ```
 
+##### Content Boxes On Each Page
+
+The content boxes on each page also aren't tabular data. They may contain tabular data, but they aren't tabular data themselves. These have been updated to now use HTML5 `<article>` elements instead and are wrapped in the `<main>` element for accessibility purposes:
+
+```html
+<main class="wrapper" role="main">
+  <article id="latest-runs"> ... </article>
+  <article id="latest-tweets"> ... </article>
+</main>
+```
+
 #### Scripts Moved from Head to Body
 
 The general practice on `<script>` element placement is that scripts should appear [*before you need it [and] no sooner*](http://stackoverflow.com/a/196708/1317805). With the exception of the HTML5 Shiv which is placed in the `<head>` due to it being required prior to HTML5 elements and attributes being used, all of the JavaScript files are now initiated before the closing `</body>` tag.
