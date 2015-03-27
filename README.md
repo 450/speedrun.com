@@ -273,7 +273,15 @@ What the current Speedrun.com website shows and what we definitely do not want t
 Path | Validity | Screenshots
 ---- | -------- | -----------
 [index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome on 8.1](http://i.imgur.com/QY98ltN.png), [IE8 on XP](http://i.imgur.com/RswgDIa.png), [IE9 on 7](http://i.imgur.com/NFDIVz0.png)
-[Games/index.html](http://450.github.io/speedrun.com/Games/index.html) | Not ready | - 
+[Games/index.html](http://450.github.io/speedrun.com/Games/index.html) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://450.github.io/speedrun.com/Games/index.html) | Windows: [Chrome on 8.1](http://i.imgur.com/Gb57us6.png), [IE8 on XP](http://i.imgur.com/kcYWiZH.png), [IE9 on 7](http://i.imgur.com/adBroQy.png)
+[Games/ExampleGame.html](http://450.github.io/speedrun.com/Games/ExampleGame.html) | Not ready | - 
+[Streams/index.html](http://450.github.io/speedrun.com/Streams/index.html) | Not ready | - 
+[Resource/index.html](http://450.github.io/speedrun.com/Resources/index.html) | Not ready | - 
+[Forums/index.html](http://450.github.io/speedrun.com/Forums/index.html) | Not ready | - 
+[Users/ExampleUser.html](http://450.github.io/speedrun.com/Users/ExampleUser.html) | Not ready | - 
+[Users/EditProfile.html](http://450.github.io/speedrun.com/Users/EditProfile.html) | Not ready | - 
+[Users/Settings.html](http://450.github.io/speedrun.com/Users/Settings.html) | Not ready | - 
+[Users/RunsAwaitingV...](http://450.github.io/speedrun.com/Users/RunsAwaitingVerification.html) | Not ready | - 
 
 ### CSS
 
