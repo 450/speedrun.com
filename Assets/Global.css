@@ -23,6 +23,10 @@ th small {
 	font-weight: normal;
 }
 
+a img {
+	border: none;
+}
+
 .clear {
 	clear: both;
 }

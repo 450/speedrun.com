@@ -30,7 +30,6 @@ main article {
   background: -o-linear-gradient(top, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
   background: -ms-linear-gradient(top, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
   background: linear-gradient(to bottom, rgba(80, 80, 80, 0.9) 0%,rgba(32, 32, 32, 0.9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(80, 80, 80, 0.9)', endColorstr='rgba(32, 32, 32, 0.9)',GradientType=0 );
 }
 
 #navbar .active > a,
@@ -43,5 +42,4 @@ main article {
   background: -o-linear-gradient(top, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
   background: -ms-linear-gradient(top, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
   background: linear-gradient(to bottom, rgba(112, 112, 112, 0.9) 0%,rgba(64, 64, 64, 0.9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(112, 112, 112, 0.9)', endColorstr='rgba(64, 64, 64, 0.9)',GradientType=0 );
 }
