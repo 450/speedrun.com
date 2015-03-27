@@ -224,6 +224,10 @@ ul.table-display li a:focus {
 	width: 300px;
 }
 
+main {
+	display: block;
+}
+
 main article,
 main nav {
 	border: 1px solid #505050;
