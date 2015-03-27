@@ -15,7 +15,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
 
 ## Readme Contents
 
-* [What's different?](#whats-different)
+* [What's Different?](#whats-different)
   * [HTML From the Ground Up](#html-from-the-ground-up)
     * [Updated to HTML5](#updated-to-html5)
     * [No More Inline Styling](#no-more-inline-styling)
@@ -27,6 +27,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
     * [Other Minor Changes](#other-minor-changes)
   * [CSS Rewritten and Restructured](#css-rewritten-and-restructured)
   * [JavaScript Updated](#javascript-updated)
+* [Further Notes](#further-notes)
 * [File Structure](#file-structure)
   * [HTML](#html)
   * [Stylesheets](#stylesheets)
@@ -35,7 +36,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
 
 ---
 
-## What's different?
+## What's Different?
 
 ### HTML From the Ground Up
 
@@ -179,11 +180,19 @@ As with the CSS, ideally this will need to be minified before being put into pro
 
 ---
 
+## Further Notes
+
+* For the purposes of running this repository locally without having to create a HTTP server all `<a>` elements `href` attributes point to a local path (e.g. `index.html` and `../Games/index.html`). For production, this would instead be better pointing directly to the base directory (`/` and `/Games/index.html`).
+
+---
+
 ## File Structure
 
 ### HTML
 
 The filenames themselves link to the Github-hosted preview of the page, which has the base URL of http://450.github.io/speedrun.com.
+
+Markup is shared across multiple pages. For example, the Streams page features the same full-width `<article>` layout as the `<nav>` element at the top of the Games page.
 
 Folder | Name | Purpose
 ------ | ---- | -------

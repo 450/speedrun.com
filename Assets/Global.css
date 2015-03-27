@@ -183,7 +183,8 @@ th small {
 	width: 300px;
 }
 
-main article {
+main article,
+main nav {
 	border: 1px solid #505050;
 	border-radius: 5px;
 	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
