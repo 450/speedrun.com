@@ -18,6 +18,9 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
 * [What's different?](#whats-different)
   * [HTML From the Ground Up](#html-from-the-ground-up)
     * [Updated to HTML5](#updated-to-html5)
+    * [The Page Header](#the-page-header)
+    * [Unsemantic Tables Replaced with Relevant Markup](#unsemantic-tables-replaced-with-relevant-markup)
+      * [Navigation Menus](#navigation-menus)
     * [Scripts Moved from Head to Body](#scripts-moved-from-head-to-body)
   * [CSS Rewritten and Restructured](#css-rewritten-and-restructured)
   * [JavaScript Updated](#javascript-updated)
@@ -52,6 +55,45 @@ In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5sh
 <!--[if lt IE 9]>
   <script src="Assets/HTML5Shiv/html5shiv.min.js"></script>
 <![endif]-->
+```
+
+#### The Page Header
+
+The page header on the current Speedrun.com website features two elements positioned on top of each other - one for the full-width background and the other for the inner content. This has now been replaced with just one HTML5 `<header>` element. Within this, the now-invalid `<center>` element (which was deprecated in the HTML401 specification) has been replaced with a HTML5 `<section>` element which has been given the following CSS declaration: `margin: 0 auto`. This keeps the element block-level, keeping the style similar accross multiple devices and browsers.
+
+```
+<header>
+	<section class="wrapper table-display">
+	  ...
+	</section>
+</header>
+```
+
+For SEO purposes, a hidden `<h1>` element has been placed alongside the site's logo with the content "Speedrun.com". This is the title of the page, and can be updated on each page to let search engine crawlers know what the page's purpose is. E.g. "Speedrun.com's Games Listing". Due to it being hidden, users will not know this element exists unless they're using screen readers - perfect for accessibility, too!
+
+```
+<h1 style="display: none">Speedrun.com</h1> <!-- For SEO purposes. -->
+```
+
+#### Unsemantic Tables Replaced with Relevant Markup
+
+The current Speedrun.com website uses the HTML `<table>` element for layout in a lot of places. There is no situation in HTML where the `<table>` element should be used for anything other than tabular content. The main question to ask before using the `<table>` element is *What is this a table of?*, and if the answer is anything other than *something something data to be displayed in a table* then tables should definitely not be used.
+
+CSS allows us to style things to look like tables with its `display: table` and equivalent `display: table-row` and `display: table-cell` properties. This *is* semantic and has been used in various places instead.
+
+##### Navigation Menus
+
+Navigation menus aren't tabular data, so have been updated to now use the HTML5 `<nav>` element, and feature unordered lists of links.
+
+```
+<nav>
+	<ul>
+		<li>
+			<a href="Games/index.html">Games</a>
+		</li>
+		...
+	</ul>
+</nav>
 ```
 
 #### Scripts Moved from Head to Body
