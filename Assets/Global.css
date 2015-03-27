@@ -38,6 +38,30 @@ a img {
 	border: none;
 }
 
+.mod-link a {
+	color: #E44;
+}
+
+.mod-link a:hover,
+.mod-link a:focus {
+	color: #F88;
+}
+
+.super-moderator,
+.moderator {
+	display: inline-block;
+	margin: 2px 0;
+	padding-left: 20px;
+}
+
+.super-moderator {
+	background: url(Icons/SuperMod.png) no-repeat 0 50%;
+}
+
+.moderator {
+	background: url(Icons/Mod.png) no-repeat 0 50%;
+}
+
 .clear {
 	clear: both;
 }
@@ -250,9 +274,14 @@ main nav ul {
 	padding: 0;
 }
 
+main nav ul ul {
+	padding-left: 10px;
+}
+
 main nav ul a {
 	display: block;
 	line-height: 24px;
+	padding: 2px 4px;
 }
 
 main ul img {
@@ -308,6 +337,24 @@ main article#latest-tweets {
 	width: 278px;
 }
 
+main nav figure {
+	margin: 0 0 14px;
+	text-align: center;
+}
+
+main nav figure:last-child {
+	margin-bottom: 0;
+}
+
+main nav figure h3 {
+	color: #fff;
+}
+
+main nav figure img {
+	border: 1px solid #ccc;
+	margin: 10px 0;
+}
+
 #latest-runs table {
 	font-size: 14px;
 	margin: 10px 0;
@@ -324,6 +371,23 @@ main article#latest-tweets {
 
 #latest-runs .time {
 	text-align: right;
+}
+
+footer#moderated-by {
+	font-size: 12px;
+	margin: 14px 0 0;
+	text-align: center;
+}
+
+footer#moderated-by span {
+	color: #A0A0A0;
+	display: block;
+	margin: 0 0 5px;
+}
+
+footer#moderated-by img {
+	height: 14px;
+	vertical-align: -3px;
 }
 
 footer {
