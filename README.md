@@ -211,11 +211,14 @@ Markup is shared across multiple pages. For example, the Streams page features t
 Folder | Name | Purpose
 ------ | ---- | -------
 ↳ | [index.html](http://450.github.io/speedrun.com) | This is the main homepage (http://speedrun.com)
-Games | index.html | This is the Games top-level page (http://speedrun.com/games)
-Streams | index.html | This is the Streams top-level page (http://speedrun.com/streams)
-Resources | index.html | This is the Resources top-level page (http://speedrun.com/resources)
-Forums | index.html | This is the forum top-level page (http://speedrun.com/forum)
-Users | ExampleUser.html | This is an example user page (http://speedrun.com/user/...)
+Games | [index.html](http://450.github.io/speedrun.com/Games/index.html) | Games top-level page (http://speedrun.com/games)
+Streams | [index.html](http://450.github.io/speedrun.com/Streams/index.html) | Streams top-level page (http://speedrun.com/streams)
+Resources | [index.html](http://450.github.io/speedrun.com/Resources/index.html) | Resources top-level page (http://speedrun.com/resources)
+Forums | [index.html](http://450.github.io/speedrun.com/Forums/index.html) | Forums top-level page (http://speedrun.com/forum)
+Users | [ExampleUser.html](http://450.github.io/speedrun.com/Users/ExampleUser.html) | Example user profile page (http://speedrun.com/user/...)
+↳ | [EditProfile.html](http://450.github.io/speedrun.com/Users/EditProfile.html) | Edit profile page (http://speedrun.com/editprofile)
+↳ | [Settings.html](http://450.github.io/speedrun.com/Users/Settings.html) | Settings page (http://speedrun.com/settings)
+↳ | [RunsAwaitingVerification.html](http://450.github.io/speedrun.com/Users/RunsAwaitingVerification.html) | Run verification page (http://speedrun.com/runsawaitingverification)
 
 ### Stylesheets
 
