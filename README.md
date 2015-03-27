@@ -28,6 +28,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
     * [Scripts Moved from Head to Body](#scripts-moved-from-head-to-body)
     * [Other Minor Changes](#other-minor-changes)
   * [CSS Rewritten and Restructured](#css-rewritten-and-restructured)
+    * [Internet Explorer's Filter Property](#internet-explorers-filter-property)
   * [JavaScript Updated](#javascript-updated)
 * [Further Notes](#further-notes)
 * [File Structure](#file-structure)
@@ -35,6 +36,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
   * [Stylesheets](#stylesheets)
   * [JavaScript](#javascript)
   * [Images](#images)
+* [Validation Tests](#validation-tests)
 
 ---
 
@@ -172,6 +174,10 @@ As with W3's HTML validation service, they also offer a CSS validation service. 
 
 Ideally this will need to be minified before being put into production.
 
+#### Internet Exporer's Filter Property
+
+I've currently not implemented the `filter` style declaration supported by Internet Explorer. For some reason the current Speedrun.com website has bright blue filters, which go against the dark theme applied by the Default style. I'm not sure if this was a by-design decision, but as it didn't look right I've got rid of these for the time being.
+
 ### JavaScript Updated
 
 The existing JavaScript on the current Speedrun.com website is pretty problem-free. There are a couple of bits which could do with improvement, but nothing major. For the purpose of this repository though I have rewritten the basic front-end functionality to make it work with the new HTML structure and conform with standards.
@@ -236,3 +242,15 @@ Folder | Purpose
 ↳ | Site logo and favicon
 Icons | Icon images used throughout site
 Themes/Backgrounds | Theme background images
+
+---
+
+## Validation Tests
+
+The following validation tests have been carried out on the completed files to ensure they comply with W3 validation standards. Where appropriate, screenshots of how each page renders on different browsers have also been provided.
+
+### HTML
+
+Path | Validity | Screenshots
+---- | -------- | -----------
+[index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome](http://i.imgur.com/QY98ltN.png)
