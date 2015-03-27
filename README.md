@@ -47,8 +47,8 @@ The current Speedrun.com website uses HTML401 and invalidly introduces HTML5 ele
 
 The HTML has been tested to be fully compliant with W3's validator service. The current homepage of Speedrun.com throws an impressive 22 errors, whereas this doesn't throw any.
 
-The HTML5 specification can be found at http://www.w3.org/TR/html5.
-The W3's HTML validation service can be found at http://validator.w3.org.
+* HTML5 specification: http://www.w3.org/TR/html5.
+* W3's HTML validation service: http://validator.w3.org.
 
 In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5shiv) has been introduced to allow old versions of Internet Explorer to use the new HTML5 elements. This can be found in the Assets/HTML5Shiv folder. Targetting only versions of IE lower than 9, the following declaration can be found in the `<head>` element of each page:
 
@@ -61,6 +61,15 @@ In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5sh
 #### No More Inline Styling
 
 Inline styling is bad, very bad! Inline styling makes the entire website very hard to maintain as it means you have to edit multiple pages rather than just the one CSS file. With that said, moving inline styling into a CSS file is definitely the way forward.
+
+One breaking issue on the current Speedrun.com website is that the page widths are defined entirely with inline styling. A lot of elements feature `style="width: 1135px"` and this means that for a responsive design to be implemented a HTML redesign would be required anyway. The page's width is now contained within the `Global.css` file and is controlled by the `.wrapper` class which is intended to be placed on any element which should be styled like this.
+
+```css
+.wrapper {
+  margin: 0 auto;
+	width: 1136px;
+}
+```
 
 Inline styling does still exist in a couple of places. The reason for this is that I didn't want this redesign to cause too much of an uphaul on the back-end. Usernames, for example, still have their colours defined within the element's `style` attribute (although I've dropped the unnecessary `!important` declaration the current website uses on these). In an ideal world the only inline styling would be toggled by the JavaScript and all styling including username colours would be driven by the CSS.
 
@@ -140,7 +149,7 @@ The current Speedrun.com website only uses one CSS document per theme. This mean
 
 As with W3's HTML validation service, they also offer a CSS validation service. The current Default theme on Speedrun.com throws 39 errors - although some of these are admittedly unavoidable.
 
-The W3's CSS validation service can be found at http://jigsaw.w3.org.
+* W3's CSS validation service: http://jigsaw.w3.org.
 
 Ideally this will need to be minified before being put into production.
 
