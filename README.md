@@ -66,6 +66,8 @@ In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5sh
 <![endif]-->
 ```
 
+*Note: The HTML5Shiv repository states to use `lt IE 9` to target versions less than IE9, but IE9 does not support the `<main>` element which we're using. If you don't want to target IE9 with this, simply change the above snippet to `lt IE 9` and manually add in support for the `<main>` element using `document.createElement('main')`. Further styling changes may be required with this approach as well.*
+
 #### No More Inline Styling
 
 Inline styling is bad, very bad! Inline styling makes the entire website very hard to maintain as it means you have to edit multiple pages rather than just the one CSS file. With that said, moving inline styling into a CSS file is definitely the way forward.
@@ -251,6 +253,14 @@ Themes/Backgrounds | Theme background images
 The following validation tests have been carried out on the completed files to ensure they comply with W3 validation standards. Where appropriate, screenshots of how each page renders on different browsers have also been provided.
 
 ### HTML
+
+What we want to see:
+
+![Valid](http://i.imgur.com/2m0GmDm.png)
+
+What the current Speedrun.com website shows and what we definitely do not want to see:
+
+![Invalid](http://i.imgur.com/c6lk0jF.png)
 
 Path | Validity | Screenshots
 ---- | -------- | -----------
