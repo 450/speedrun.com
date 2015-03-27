@@ -2,9 +2,15 @@ body {
 	background: #101010 url(Backgrounds/Default.png) 50% 50% repeat;
 }
 
-main article {
+main article,
+main nav {
 	background: rgb(32, 32, 32);
 	background: rgba(32, 32, 32, 0.9);
+}
+
+main nav ul a:hover,
+main nav ul a:focus {
+  background: rgba(64, 64, 64, 0.9);
 }
 
 .username {

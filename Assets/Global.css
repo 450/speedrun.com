@@ -23,6 +23,17 @@ th small {
 	font-weight: normal;
 }
 
+a {
+	color: #E0E0E0;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #fff;
+}
+
 a img {
 	border: none;
 }
@@ -33,11 +44,6 @@ a img {
 
 .hidden {
 	display: none;
-}
-
-.wrapper {
-	margin: 0 auto;
-	width: 1136px;
 }
 
 .username {
@@ -74,6 +80,9 @@ a img {
 .table-display {
 	display: table;
 	height: 35px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 .table-display ul {
@@ -96,17 +105,40 @@ a img {
 .table-display li {
 	display: table-cell;
 	height: inherit;
+	text-align: center;
 	vertical-align: middle;
 }
 
 .table-display div a,
 .table-display li a {
-	display: table-cell;
+	color: #E0E0E0;
+	display: block;
 	height: inherit;
+	line-height: 35px;
 	margin: 0;
 	padding: 0 10px;
 	transition: 0.2s;
 	vertical-align: middle;
+}
+
+ul.table-display li a {
+	border-bottom: 1px dotted #E0E0E0;
+	display: inline;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul.table-display li.separate a,
+ul.table-display li.active a {
+	border: none;
+}
+
+ul.table-display li a:hover,
+ul.table-display li a:focus {
+	background: transparent;
+	border-color: #fff;
+	color: #fff;
 }
 
 .table-display img {
@@ -149,6 +181,11 @@ a img {
 	font-weight: normal;
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 1136px;
+}
+
 #navbar {
 	background: #212121;
 	border-bottom: 1px solid #505050;
@@ -177,7 +214,7 @@ a img {
 }
 
 #logo img {
-	vertical-align: top;
+	vertical-align: bottom;
 }
 
 #search input {
@@ -197,12 +234,63 @@ main nav {
   -o-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 	color: #C0C0C0;
-	font-size: 16px;
+	display: block;
+	margin: 10px 0;
 	padding: 10px;
 }
 
-main article h2 {
+main nav ul {
+	display: block;
+	list-style-type: none;
 	margin: 0;
+	padding: 0;
+}
+
+main nav ul a {
+	display: block;
+	line-height: 24px;
+}
+
+main ul img {
+	margin: 0 4px;
+	vertical-align: -3px;
+}
+
+main h2 {
+	margin: 0;
+}
+
+main h3 {
+	font-size: 14px;
+	margin: 4px 0;
+}
+
+main h3 img {
+	vertical-align: -2px;
+}
+
+main article a {
+	font-weight: normal;
+}
+
+main .game-list {
+	list-style-type: none;
+	margin: 4px 0 20px;
+	padding: 0;
+}
+
+main .game-list:last-child {
+	margin-bottom: 4px;
+}
+
+main .sidebar-left {
+	float: left;
+	width: 204px;
+}
+
+main .content-right {
+	float: right;
+	width: 870px;
 }
 
 main article#latest-runs {
@@ -238,6 +326,10 @@ footer {
 	color: #C0C0C0;
 	font-size: 12px;
 	text-align: center;
+}
+
+footer.wrapper {
+	margin-top: 20px;
 }
 
 footer a {
