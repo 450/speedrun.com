@@ -37,6 +37,7 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
   * [JavaScript](#javascript)
   * [Images](#images)
 * [Validation Tests](#validation-tests)
+  * [HTML](#html-1)
 
 ---
 
@@ -57,10 +58,10 @@ The HTML has been tested to be fully compliant with W3's validator service. The 
 * HTML5 specification: http://www.w3.org/TR/html5.
 * W3's HTML validation service: http://validator.w3.org.
 
-In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5shiv) has been introduced to allow old versions of Internet Explorer to use the new HTML5 elements. This can be found in the Assets/HTML5Shiv folder. Targetting only versions of IE lower than 9, the following declaration can be found in the `<head>` element of each page:
+In addition to this, the popular [HTML5 Shiv](https://github.com/aFarkas/html5shiv) has been introduced to allow old versions of Internet Explorer to use the new HTML5 elements. This can be found in the Assets/HTML5Shiv folder. Targetting only versions of IE lower than or equal to 9, the following declaration can be found in the `<head>` element of each page:
 
 ```html
-<!--[if lt IE 9]>
+<!--[if lte IE 9]>
   <script src="Assets/HTML5Shiv/html5shiv.min.js"></script>
 <![endif]-->
 ```
@@ -253,4 +254,4 @@ The following validation tests have been carried out on the completed files to e
 
 Path | Validity | Screenshots
 ---- | -------- | -----------
-[index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome](http://i.imgur.com/QY98ltN.png)
+[index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome on 8.1](http://i.imgur.com/QY98ltN.png), [IE8 on XP](http://i.imgur.com/RswgDIa.png), [IE9 on 7](http://i.imgur.com/NFDIVz0.png).
