@@ -22,7 +22,9 @@ When referring to the *current* Speedrun.com I'm talking about the design on the
     * [The Page Header](#the-page-header)
     * [Unsemantic Tables Replaced with Relevant Markup](#unsemantic-tables-replaced-with-relevant-markup)
       * [Navigation Menus](#navigation-menus)
+      * [Content Boxes On Each Page](#content-boxes-on-each-page)
     * [Scripts Moved from Head to Body](#scripts-moved-from-head-to-body)
+    * [Other Minor Changes](#other-minor-changes)
   * [CSS Rewritten and Restructured](#css-rewritten-and-restructured)
   * [JavaScript Updated](#javascript-updated)
 * [File Structure](#file-structure)
@@ -66,7 +68,7 @@ One breaking issue on the current Speedrun.com website is that the page widths a
 
 ```css
 .wrapper {
-  margin: 0 auto;
+	margin: 0 auto;
 	width: 1136px;
 }
 ```
@@ -90,7 +92,6 @@ Inline styling does still exist in a couple of places. The reason for this is th
 	color: #E44;
 }
 ```
-
 
 #### The Page Header
 
@@ -153,6 +154,10 @@ The general practice on `<script>` element placement is that scripts should appe
 	<script type="text/javascript" src="Assets/Generic.js"></script>
 </body>
 ```
+
+#### Other Minor Changes
+
+* `href` attributes have been dropped from `<a>` elements where unnecessary.
 
 ### CSS Rewritten and Restructured
 
