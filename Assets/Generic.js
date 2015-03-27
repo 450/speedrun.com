@@ -18,7 +18,7 @@ $(function() {
 			return;
 		}
 
-		$('.active').removeClass('active');
+		$parent.parent().find('.active').removeClass('active');
 		$parent.toggleClass('active');
 	})
 })
