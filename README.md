@@ -9,6 +9,8 @@ My unaffiliated rework of the Speedrun.com website. The official albeit unused S
 
 I've created this repository following my comments on the site's current HTML at http://www.speedrun.com/The_Site/thread/ofyge with permission from Lighnat0r.
 
+Published demo pages can be demoed at http://450.github.io/speedrun.com.
+
 When referring to the *current* Speedrun.com I'm talking about the design on the 26th of March 2015. This document may be out of date, and hopefully will be out of date in the near future. This repository simply sets out to give the current developers an easy insight into how to fix current site issues.
 
 ---
@@ -182,15 +184,17 @@ As with the CSS, ideally this will need to be minified before being put into pro
 
 ## Further Notes
 
-* For the purposes of running this repository locally without having to create a HTTP server all `<a>` elements `href` attributes point to a local path (e.g. `index.html` and `../Games/index.html`). For production, this would instead be better pointing directly to the base directory (`/` and `/Games/index.html`).
+* For the purposes of running this repository locally without having to create a HTTP server all `<a>` elements' `href` attributes point to a local path (e.g. `index.html` and `../Games/index.html`). For production, this should instead point directly to the base directory (`/` and `/Games/index.html`).
 
 ---
 
 ## File Structure
 
-### HTML
+The file structure here is purely an example for demo purposes. Pages are liked with each other allowing for this repository to be run as a functional local website with no back-end.
 
-The filenames themselves link to the Github-hosted preview of the page, which has the base URL of http://450.github.io/speedrun.com.
+The HTML filenames themselves link to the Github-hosted preview of the page, which has the base URL of http://450.github.io/speedrun.com.
+
+### HTML
 
 Markup is shared across multiple pages. For example, the Streams page features the same full-width `<article>` layout as the `<nav>` element at the top of the Games page.
 
