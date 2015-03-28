@@ -155,6 +155,7 @@ ul.table-display li a {
 
 ul.table-display li.separate a,
 ul.table-display li.active a {
+	background: transparent;
 	border: none;
 }
 
