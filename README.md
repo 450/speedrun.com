@@ -276,8 +276,8 @@ Path | Validity | Screenshots
 ---- | -------- | -----------
 [index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome on 8.1](http://i.imgur.com/QY98ltN.png), [IE8 on XP](http://i.imgur.com/RswgDIa.png), [IE9 on 7](http://i.imgur.com/NFDIVz0.png)
 [Games/index.html](http://450.github.io/speedrun.com/Games/index.html) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2FGames%2Findex.html) | Windows: [Chrome on 8.1](http://i.imgur.com/Gb57us6.png), [IE8 on XP](http://i.imgur.com/kcYWiZH.png), [IE9 on 7](http://i.imgur.com/adBroQy.png)
-[Games/ExampleGame.html](http://450.github.io/speedrun.com/Games/ExampleGame.html) | Not ready | - 
-[Games/ExampleRun.html](http://450.github.io/speedrun.com/Games/ExampleRun.html) | Not ready | - 
+[Games/ExampleGame.html](http://450.github.io/speedrun.com/Games/ExampleGame.html) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2FGames%2FExampleGame.html) | Windows: [Chrome on 8.1](http://i.imgur.com/omV45cY.png), [IE8 on XP](http://i.imgur.com/cOPnx1s.png), [IE9 on 7](http://i.imgur.com/DEhCNdW.png)
+[Games/ExampleRun.html](http://450.github.io/speedrun.com/Games/ExampleRun.html) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2FGames%2FExampleRun.html) | Windows: [Chrome on 8.1](http://i.imgur.com/7YR10IW.png), [IE8 on XP](http://i.imgur.com/0L2gLdx.png), [IE9 on 7](http://i.imgur.com/YkgcuDg.png)
 [Streams/index.html](http://450.github.io/speedrun.com/Streams/index.html) | Not ready | - 
 [Resource/index.html](http://450.github.io/speedrun.com/Resources/index.html) | Not ready | - 
 [Forums/index.html](http://450.github.io/speedrun.com/Forums/index.html) | Not ready | - 
