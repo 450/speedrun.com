@@ -22,8 +22,10 @@ tr.clickable {
 	cursor: pointer;
 }
 
-table a {
+table tr td a,
+table tr th a {
 	text-decoration: none;
+	font-weight: bold;
 }
 
 td, th {
@@ -41,6 +43,20 @@ table .rank {
 
 table .time {
 	text-align: right;
+}
+
+table .category {
+	width: 200px;
+}
+
+table .icon {
+	text-align: center;
+	width: 24px;
+}
+
+table .platform,
+table .date {
+	width: 120px;
 }
 
 th small {
@@ -79,11 +95,16 @@ sup {
 	color: #F88;
 }
 
+.admin,
 .super-moderator,
 .moderator {
 	display: inline-block;
 	margin: 2px 0;
 	padding-left: 20px;
+}
+
+.admin {
+	background: url(Icons/Admin.png) no-repeat 0 50%;
 }
 
 .super-moderator {
@@ -210,6 +231,30 @@ ul li.active ul li a {
 ul li.active a,
 ul li ul li.active a {
 	cursor: default;
+}
+
+ul.social {
+	display: block;
+	margin: 10px 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.social li {
+	display: inline;
+	display: inline-block;
+}
+
+ul.social li a {
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	width: 24px;
+}
+
+ul.social li a img {
+	vertical-align: middle;
+	width: 16px;
 }
 
 .table-display img {
