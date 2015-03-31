@@ -11,12 +11,36 @@ button, input, select, textarea {
 	padding: 2px 4px;
 }
 
+table {
+	border-collapse: collapse;
+	font-size: 14px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+tr.clickable {
+	cursor: pointer;
+}
+
+table a {
+	text-decoration: none;
+}
+
 td, th {
+	padding: 2px 4px;
 	text-align: left;
 }
 
 td a, th a {
 	color: #E0E0E0;
+}
+
+table .rank {
+	text-align: center;
+}
+
+table .time {
+	text-align: right;
 }
 
 th small {
@@ -38,12 +62,20 @@ a img {
 	border: none;
 }
 
-.mod-link a {
+sup {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.mod-link a,
+.table-display li.mod-link a {
 	color: #E44;
 }
 
 .mod-link a:hover,
-.mod-link a:focus {
+.mod-link a:focus,
+#leaderboard li.mod-link a:hover,
+#leaderboard li.mod-link a:focus {
 	color: #F88;
 }
 
@@ -145,7 +177,8 @@ a img {
 	vertical-align: middle;
 }
 
-ul.table-display li a {
+ul.table-display li a,
+#leaderboard li a {
 	border-bottom: 1px dotted #E0E0E0;
 	display: inline;
 	font-size: 14px;
@@ -154,16 +187,29 @@ ul.table-display li a {
 }
 
 ul.table-display li.separate a,
-ul.table-display li.active a {
+#leaderboard li.separate a,
+ul.table-display li.active a,
+#leaderboard li.active a {
 	background: transparent;
 	border: none;
 }
 
 ul.table-display li a:hover,
-ul.table-display li a:focus {
+ul.table-display li a:focus,
+#leaderboard li a:hover,
+#leaderboard li a:focus {
 	background: transparent;
 	border-color: #fff;
 	color: #fff;
+}
+
+ul li.active ul li a {
+  cursor: pointer;
+}
+
+ul li.active a,
+ul li ul li.active a {
+  cursor: default;
 }
 
 .table-display img {
@@ -251,6 +297,17 @@ ul.table-display li a:focus {
 
 main {
 	display: block;
+	position: relative;
+}
+
+main form {
+	display: block;
+	margin: 10px 0;
+}
+
+main form label {
+	display: inline-block;
+	margin: 0 4px;
 }
 
 main article,
@@ -266,6 +323,36 @@ main nav {
 	display: block;
 	margin: 10px 0;
 	padding: 10px;
+}
+
+main article nav {
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+main article :last-child {
+	margin-bottom: 0;
+}
+
+main article figure.video-area,
+main article section.video-information {
+	margin: 20px auto;
+	width: 685px;
+}
+
+main article figure h3 {
+	margin-top: 10px;
+}
+
+main nav.fixed {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 10px;
+	top: 16px;
+	text-align: right;
 }
 
 main nav ul {
@@ -291,7 +378,13 @@ main ul img {
 }
 
 main h2 {
-	margin: 0;
+	margin: 0 0 10px;
+}
+
+main h2 cite,
+main h2 small {
+	font-size: 14px;
+	font-style: normal;
 }
 
 main h3 {
@@ -356,22 +449,8 @@ main nav figure img {
 	margin: 10px 0;
 }
 
-#latest-runs table {
-	font-size: 14px;
-	margin: 10px 0;
-	width: 100%;
-}
-
-#latest-runs table a {
-	text-decoration: none;
-}
-
-#latest-runs .rank {
-	text-align: center;
-}
-
-#latest-runs .time {
-	text-align: right;
+#leaderboard nav li {
+	padding: 0 10px;
 }
 
 footer#moderated-by {

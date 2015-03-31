@@ -109,7 +109,7 @@
 			<!-- Game information. -->
 			<figure>
 				<h3>Example Game</h3>
-				<img src="Images/180x128.png" alt="Example Game" />
+				<img src="Images/180x128.png" alt="Example Game" title="Example Game" />
 				<figcaption>2015, PC</figcaption>
 			</figure>
 			<!-- End game information. -->
@@ -163,7 +163,231 @@
 			</footer>
 			<!-- End moderated by info. -->
 		</nav>
-		<article class="content-right"></article>
+
+		<article class="content-right" id="leaderboard">
+			<h2>Leaderboard</h2>
+
+			<!-- Leaderboard navigation. -->
+			<nav class="fixed">
+				<ul class="table-display">
+					<li class="mod-link separate">
+						<a href="#">Submit Run</a>
+					</li>
+					<li>
+						<a href="#">Show Rules</a>
+					</li>
+					<li>
+						<a href="#">Show Misc. Categories</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End leaderboard navigation. -->
+
+			<!-- Leaderboard filters. -->
+			<form>
+
+				<label>
+					Region
+					<select>
+						<option>All</option>
+						<option>PAL (EU)</option>
+						<option>NA (NTSC)</option>
+						<option>JPN (NTSC)</option>
+						<option>KOR (NTSC)</option>
+						<option>CHN (NTSC)</option>
+					</select>
+				</label>
+
+				<label>
+					Platform
+					<select>
+						<option>All</option>
+						<option>WonderSwan</option>
+					</select>
+				</label>
+
+				<label>
+					Sort
+					<select>
+						<option>Real Time</option>
+						<option>In-Game Time</option>
+					</select>
+				</label>
+
+				<label>
+					<input type="checkbox" checked />
+					Show Emulators
+				</label>
+
+				<label>
+					<input type="checkbox" />
+					Videos Only
+				</label>
+
+			</form>
+			<!-- End leaderboard filters. -->
+
+			<!-- Run type navigation. -->
+			<nav class="clean">
+				<ul class="table-display">
+					<li class="active">
+						<a href="#">Example%</a>
+					</li>
+					<li>
+						<a href="#">100%</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End run type navigation. -->
+
+			<!-- Leaderboard listing. -->
+			<table class="striped">
+				<thead>
+					<tr>
+						<th>Rank</th>
+						<th>Player</th>
+						<th>Real Time</th>
+						<th>In-Game Time</th>
+						<th>Platform</th>
+						<th>Date</th>
+						<th colspan="3"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Rank 1. -->
+					<tr class="clickable" data-location="ExampleRun.html">
+						<td>
+							<img src="../Assets/Icons/GoldTrophy.png" alt="1st" /> 1st
+						</td>
+						<td>
+							<a class="username" href="Users/ExampleUser.html" style="color: #E44;">
+								<span class="flag jp"></span>
+								Example User
+							</a>
+						</td>
+						<td>1:23:45.67</td>
+						<td>1:23:45.68</td>
+						<td>
+							<span class="flag jp"></span> WonderSwan
+						</td>
+						<td>
+							1 Week Ago
+						</td>
+						<td>
+							<img src="../Assets/Icons/Video.png" alt="Video available" title="Video available" />
+						</td>
+						<td>
+							<img src="../Assets/Icons/Messages.png" alt="Comment: I'm not hugely fond of Mudkips" title="Comment: I'm not hugely fond of Mudkips" />
+						</td>
+						<td>
+							<a href="#">
+								<img src="../Assets/Icons/Pencil.png" alt="Edit" title="Edit" />
+							</a>
+						</td>
+					</tr>
+					<!-- End rank 1. -->
+
+					<!-- Rank 2. -->
+					<tr class="clickable" data-location="ExampleRun.html">
+						<td>
+							<img src="../Assets/Icons/SilverTrophy.png" alt="2nd" /> 2nd
+						</td>
+						<td>
+							<a class="username" href="Users/ExampleUser.html" style="color: #4BE;">
+								<span class="flag jp"></span>
+								Example User
+							</a>
+						</td>
+						<td>1:24:35.67</td>
+						<td>1:24:35.68</td>
+						<td>
+							<span class="flag jp"></span> WonderSwan
+						</td>
+						<td>
+							1 Month Ago
+						</td>
+						<td>
+							<img src="../Assets/Icons/Video.png" alt="Video available" title="Video available" />
+						</td>
+						<td>
+							<!-- No comment. -->
+						</td>
+						<td>
+							<a href="#">
+								<img src="../Assets/Icons/Pencil.png" alt="Edit" title="Edit" />
+							</a>
+						</td>
+					</tr>
+					<!-- End rank 2. -->
+
+					<!-- Rank 3. -->
+					<tr class="clickable" data-location="ExampleRun.html">
+						<td>
+							<img src="../Assets/Icons/BronzeTrophy.png" alt="3rd" /> 3rd
+						</td>
+						<td>
+							<a class="username" href="Users/ExampleUser.html" style="color: #8AC951;">
+								<span class="flag jp"></span>
+								Example User
+							</a>
+						</td>
+						<td>1:25:35.67</td>
+						<td>1:25:35.68</td>
+						<td>
+							<span class="flag jp"></span> WonderSwan
+						</td>
+						<td>
+							2 Weeks Ago
+						</td>
+						<td>
+							<!-- No video. -->
+						</td>
+						<td>
+							<img src="../Assets/Icons/Messages.png" alt="Comment: What?! I love Mudkips!" title="Comment: What?! I love Mudkips!" />
+						</td>
+						<td>
+							<a href="#">
+								<img src="../Assets/Icons/Pencil.png" alt="Edit" title="Edit" />
+							</a>
+						</td>
+					</tr>
+					<!-- End rank 3. -->
+
+					<!-- Rank 4. -->
+					<tr class="clickable" data-location="ExampleRun.html">
+						<td>4th</td>
+						<td>
+							<a class="username" href="Users/ExampleUser.html" style="color: #66E;">
+								<span class="flag jp"></span>
+								Example User
+							</a>
+						</td>
+						<td>1:35:35.67</td>
+						<td>1:35:35.68</td>
+						<td>
+							<span class="flag jp"></span> WonderSwan
+						</td>
+						<td>
+							4 Months Ago
+						</td>
+						<td>
+							<!-- No video. -->
+						</td>
+						<td>
+							<!-- No comment. -->
+						</td>
+						<td>
+							<a href="#">
+								<img src="../Assets/Icons/Pencil.png" alt="Edit" title="Edit" />
+							</a>
+						</td>
+					</tr>
+					<!-- End rank 4. -->
+				</tbody>
+			</table>
+			<!-- End leaderboard listing. -->
+		</article>
+
 		<br class="clear" />
 	</main>
 	<!-- End main content area. -->

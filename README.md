@@ -167,6 +167,7 @@ The general practice on `<script>` element placement is that scripts should appe
 #### Other Minor Changes
 
 * `href` attributes have been dropped from `<a>` elements where unnecessary.
+* The vertical scrollbar is no longer visible by default on pages which do not need it.
 
 ### CSS Rewritten and Restructured
 
@@ -213,6 +214,7 @@ Folder | Name | Purpose
 ↳ | [index.html](http://450.github.io/speedrun.com) | This is the main homepage (http://speedrun.com)
 Games | [index.html](http://450.github.io/speedrun.com/Games/index.html) | Games top-level page (http://speedrun.com/games)
 ↳ | [ExampleGame.html](http://450.github.io/speedrun.com/Games/ExampleGame.html) | Example game page ([http://speedrun.com/...](http://www.speedrun.com/ffxv-episodeduscae))
+↳ | [ExampleRun.html](http://450.github.io/speedrun.com/Games/ExampleRun.html) | Example run page ([http://speedrun.com/.../run/...](http://www.speedrun.com/Fairune/run/33900))
 Streams | [index.html](http://450.github.io/speedrun.com/Streams/index.html) | Streams top-level page (http://speedrun.com/streams)
 Resources | [index.html](http://450.github.io/speedrun.com/Resources/index.html) | Resources top-level page (http://speedrun.com/resources)
 Forums | [index.html](http://450.github.io/speedrun.com/Forums/index.html) | Forums top-level page (http://speedrun.com/forum)
@@ -275,6 +277,7 @@ Path | Validity | Screenshots
 [index.html](http://450.github.io/speedrun.com) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2F) | Windows: [Chrome on 8.1](http://i.imgur.com/QY98ltN.png), [IE8 on XP](http://i.imgur.com/RswgDIa.png), [IE9 on 7](http://i.imgur.com/NFDIVz0.png)
 [Games/index.html](http://450.github.io/speedrun.com/Games/index.html) | ![Trophy](http://450.github.io/speedrun.com/Assets/Icons/GoldTrophy.png) [Passed](http://validator.w3.org/check?uri=http%3A%2F%2F450.github.io%2Fspeedrun.com%2FGames%2Findex.html) | Windows: [Chrome on 8.1](http://i.imgur.com/Gb57us6.png), [IE8 on XP](http://i.imgur.com/kcYWiZH.png), [IE9 on 7](http://i.imgur.com/adBroQy.png)
 [Games/ExampleGame.html](http://450.github.io/speedrun.com/Games/ExampleGame.html) | Not ready | - 
+[Games/ExampleRun.html](http://450.github.io/speedrun.com/Games/ExampleRun.html) | Not ready | - 
 [Streams/index.html](http://450.github.io/speedrun.com/Streams/index.html) | Not ready | - 
 [Resource/index.html](http://450.github.io/speedrun.com/Resources/index.html) | Not ready | - 
 [Forums/index.html](http://450.github.io/speedrun.com/Forums/index.html) | Not ready | - 

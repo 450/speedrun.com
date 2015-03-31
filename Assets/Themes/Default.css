@@ -2,6 +2,19 @@ body {
 	background: #101010 url(Backgrounds/Default.png) 50% 50% repeat;
 }
 
+/* Striped table rows. */
+.striped tr:nth-child(even) {
+  background: rgb(24, 24, 24);
+  background: rgba(24, 24, 24, 0.9);
+}
+
+/* Clickable table rows. */
+tr.clickable:hover,
+tr.clickable:focus {
+  background: rgb(64, 64, 64);
+  background: rgba(64, 64, 64, 0.9);
+}
+
 main article,
 main nav,
 ul li.active ul li a {
@@ -28,15 +41,6 @@ ul li.active ul li a:focus {
 	background: rgb(64, 64, 64);
 	background: rgba(64, 64, 64, 0.9);
   color: #fff;
-}
-
-ul li.active ul li a {
-  cursor: pointer;
-}
-
-ul li.active a,
-ul li ul li.active a {
-  cursor: default;
 }
 
 .nav-button-dropdown ul,

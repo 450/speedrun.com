@@ -15,7 +15,7 @@
 	<!-- Site header and navigation menus. -->
 	<header id="navbar">
 		<section class="wrapper table-display">
-			<h1 class="hidden">Speedrun.com - Games Listing</h1> <!-- For SEO purposes. -->
+			<h1 class="hidden">Speedrun.com - Example Run</h1> <!-- For SEO purposes. -->
 			<div id="logo">
 				<a href="../index.html">
 					<img src="../Assets/Logo.png" alt="Speedrun.com" />
@@ -23,7 +23,7 @@
 			</div>
 			<nav>
 				<ul>
-					<li class="active">
+					<li>
 						<a href="../Games/index.html">Games</a>
 					</li>
 					<li>
@@ -105,103 +105,131 @@
 
 	<!-- Main content area box. -->
 	<main class="wrapper" role="main">
-		<!-- Games navigation. -->
-		<nav>
-			<ul class="table-display">
-				<li>
-					<a href="#">Alphabetic</a>
-				</li>
-				<li class="active">
-					<a href="#">By series</a>
-				</li>
-				<li>
-					<a href="#">By platform</a>
-				</li>
-				<li>
-					<a href="#">Most popular</a>
-				</li>
-				<li>
-					<a href="#">By year</a>
-				</li>
-				<li class="separate">
-					<a href="#">Request a game</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- End games navigation. -->
-
-		<!-- Games sidebar. -->
 		<nav class="sidebar-left">
+			<!-- Game information. -->
+			<figure>
+				<h3>Example Game</h3>
+				<img src="Images/180x128.png" alt="Example Game" title="Example Game" />
+				<figcaption>2015, PC</figcaption>
+			</figure>
+			<!-- End game information. -->
+
+			<!-- Game navigation list. -->
 			<ul>
-				<li>
-					<a href="#Example-Series">
-						<img src="Images/16x16.png" alt="Example Game">
-						Example Series
-					</a>
+				<li class="active">
+					<a href="#">Leaderboard</a>
+					<ul>
+						<li>
+							<a href="#Example">Example%</a>
+						</li>
+						<li>
+							<a href="#Any">100%</a>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="#Example-Series-2">
-						<img src="Images/16x16.png" alt="Example Game">
-						Example Series 2
-					</a>
+					<a href="#">Guides</a>
 				</li>
 				<li>
-					<a href="#Example-Series-3">
-						<img src="Images/16x16.png" alt="Example Game">
-						Example Series 3
-					</a>
+					<a href="#">Streams</a>
+				</li>
+				<li>
+					<a href="#">Resources</a>
+				</li>
+				<li>
+					<a href="#">Forum</a>
+				</li>
+				<li>
+					<a href="#">ROM Hacks</a>
+				</li>
+				<li class="mod-link">
+					<a href="#">Edit Game</a>
+				</li>
+				<li class="mod-link">
+					<a href="#">Add Theme</a>
 				</li>
 			</ul>
+			<!-- End game navigation list. -->
+
+			<!-- Moderated by info. -->
+			<footer id="moderated-by">
+				<span>Moderated by:</span>
+				<a class="super-moderator" href="../Users/ExampleUser.html" style="color: #E44;">
+					Example User
+				</a>,
+				<a class="moderator" href="../Users/ExampleUser.html" style="color: #4BE;">
+					Example User 2
+				</a>
+			</footer>
+			<!-- End moderated by info. -->
 		</nav>
-		<!-- End games sidebar. -->
 
-		<!-- Series content. -->
-		<article class="content-right">
-			<h2>Games Listing <small>(By Series)</small></h2>
+		<article class="content-right" id="leaderboard-run">
+			<h2>
+				<small>
+					<img src="../Assets/Icons/GoldTrophy.png" alt="1st" /> 1st Place
+				</small>
+				<span class="hidden">Example Game</span> <!-- For SEO purposes. -->
+				Example%
+				<small>in</small>
+				1:23:45.67
+				<cite>
+					by
+					<a class="username" href="Users/ExampleUser.html" style="color: #E44;">
+						<span class="flag jp"></span>
+						Example User
+					</a>
+				</cite>
+			</h2>
 
-			<!-- Series 1. -->
-			<h3 id="example-series">
-				<img src="Images/16x16.png" alt="Example Game">
-				Example Series
-			</h3>
-			<ul class="game-list">
-				<li>
-					<a href="ExampleGame.html">Example Game</a>
-				</li>
-				<li>
-					<a href="ExampleGame.html">Example Game 2</a>
-				</li>
-			</ul>
-			<!-- End series 1. -->
+			<!-- Leaderboard navigation. -->
+			<nav class="fixed">
+				<ul class="table-display">
+					<li class="mod-link separate">
+						<a href="#">
+							<img src="../Assets/Icons/Pencil.png" alt="Edit" title="Edit" />
+							Edit
+						</a>
+					</li>
+					<li class="mod-link separate">
+						<a href="#">
+							<img src="../Assets/Icons/Delete.png" alt="Delete" title="Delete" />
+							Delete
+						</a>
+					</li>
+					<li class="mod-link separate">
+						<a href="#">
+							<img src="../Assets/Icons/Reject.png" alt="Reject" title="Reject" />
+							Reject
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End leaderboard navigation. -->
 
-			<!-- Series 2. -->
-			<h3 id="example-series-2">
-				<img src="Images/16x16.png" alt="Example Game">
-				Example Series 2
-			</h3>
-			<ul class="game-list">
-				<li>
-					<a href="ExampleGame.html">Example Game 3</a>
-				</li>
-			</ul>
-			<!-- End series 2. -->
+			<!-- Video area. -->
+			<figure class="video-area">
+				<img src="Images/VideoPlaceholder.png" alt="Video Placeholder">
+				<h3>Comment</h3>
+				<figcaption>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum sem eu urna venenatis, non faucibus orci maximus. Curabitur vitae dui vehicula mauris sodales sagittis. Nulla tincidunt quis nulla at congue. Vestibulum in malesuada leo. Ut sit amet tellus placerat, tristique leo ac, scelerisque sapien.
+				</figcaption>
+			</figure>
+			<!-- End video area. -->
 
-			<!-- Series 3. -->
-			<h3 id="example-series-3">
-				<img src="Images/16x16.png" alt="Example Game">
-				Example Series 3
-			</h3>
-			<ul class="game-list">
-				<li>
-					<a href="ExampleGame.html">Example Game 4</a>
-				</li>
-				<li>
-					<a href="ExampleGame.html">Example Game 5</a>
-				</li>
-			</ul>
-			<!-- End series 3. -->
+			<!-- Info area. -->
+			<section class="video-information">
+				<p>Recorded <strong>26th March 2015</strong> on <strong>WonderSwan<sup>[JPN]</sup></strong>. In-game time: <strong>1:23:45:68</strong>. Viewed <strong>5</strong> times.</p>
+				<p>
+					Verified by:
+					<a class="moderator username" href="../Users/ExampleUser.html" style="color: #4BE;">
+					Example User 2
+					</a>
+				</p>
+			</section>
+			<!-- End info area. -->
+
 		</article>
-		<!-- End games content. -->
 
 		<br class="clear" />
 	</main>
