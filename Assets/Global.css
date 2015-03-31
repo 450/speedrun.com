@@ -204,12 +204,12 @@ ul.table-display li a:focus,
 }
 
 ul li.active ul li a {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 ul li.active a,
 ul li ul li.active a {
-  cursor: default;
+	cursor: default;
 }
 
 .table-display img {
@@ -260,17 +260,17 @@ ul li ul li.active a {
 #navbar {
 	background: #212121;
 	border-bottom: 1px solid #505050;
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-  -ms-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-  -o-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	-ms-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	-o-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 	height: 35px;
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
-  z-index: 1;
+	z-index: 1;
 }
 
 #navbar a {
@@ -315,10 +315,10 @@ main nav {
 	border: 1px solid #505050;
 	border-radius: 5px;
 	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-  -ms-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-  -o-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	-ms-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	-o-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 	color: #C0C0C0;
 	display: block;
 	margin: 10px 0;
@@ -422,7 +422,7 @@ main .content-right {
 
 main article#latest-runs {
 	float: left;
-  width: 792px;
+	width: 792px;
 }
 
 main article#latest-tweets {
